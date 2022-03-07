@@ -16,3 +16,26 @@ while True:
 
     cnts1 = cv2.findContours(blue, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     cnts1 = imutils.grab_contours(cnts1)
+    
+    for c in cnts1:
+        area = cv2.contourArea(c)
+        if (area > 5000):
+            cv2.drawContours(frame, [c], -1, (0, 255, 0), 3)
+
+            M = cv2.moments(c)
+
+            cx = int(M["m10"] / M["m00"])
+            cy = int(M["m01"] / M["m00"])
+
+            cv2.circle(frame, (cx, cy), 7, (255, 255, 255), -1)
+            cv2.putText(frame, "Centre", (cx - 20, cy - 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+            print("area ", area)
+            print("the coordinate is..", cx, cy)
+
+    cv2.imshow("frame", frame)
+
+    k = cv2.waitKey(5)
+    if k == 27:
+        break
+    # 30, 82, 72
+    # 102, 255, 255
