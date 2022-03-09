@@ -8,9 +8,8 @@ Reading some colors with python script and open cv 🎨
 
 # Preview
 
-- Blue 
+- Blue Color
 ![Screenshot (325)](https://user-images.githubusercontent.com/99522867/157425295-9f693c21-78c4-4798-91c8-a64e4b590655.png)
-Color
 
 - Red Color
 - Green Color
