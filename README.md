@@ -19,3 +19,4 @@ Reading some colors with python script and open cv 🎨
 
 # Note
 
+<p>`colors.py ` have some lagging when the script is run, so i made a second version `colors2.py` hopefully the script will not experience lagging when run</p>
