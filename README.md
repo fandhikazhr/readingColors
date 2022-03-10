@@ -16,3 +16,6 @@ Reading some colors with python script and open cv 🎨
 
 - Green Color
 ![Screenshot (327)](https://user-images.githubusercontent.com/99522867/157425577-f9298478-6636-419a-bb27-b20a0ffa5408.png)
+
+# Note
+
